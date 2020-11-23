@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(weather4.jpg);
+    background-size: 100vw 100vh;
+    color: #ffffff;
+}
+    .input{
+        color: grey;
+        font-style: italic;
+        width: 20rem;
+        height: 3rem;
+        font-size: large;
+        padding: 0px 20px;
+        margin-bottom: 2rem;
+        border-radius: 5px;
+        border: none;
+        background-color: antiquewhite;
+    }
+        .input:focus{
+            outline-width: 0;
+        }
+        
+    .info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 20vh;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .error{
+        color: rgb(105, 42, 42);
+        
+        display: none;
+    }
+    .temperatur{
+        font-size: 7rem;
+    }
+    .description{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+    .info-wrapper{
+        display: flex;
+        max-width: 30rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .city{
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+    .windSpeed{
+        padding: 5px;
+    }
+    .humidity{
+        padding: 5px;
+    }
